@@ -8,3 +8,8 @@ const {
   show: 'show'
 }
 
+const svgSaleHeader = document.querySelector('.svg-sale-header');
+
+setTimeout(() => {
+  svgSaleHeader.classList.add('start-anim')
+}, 3000)

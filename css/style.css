@@ -79,8 +79,16 @@ a {
 
 .black-text {
   color: #0F121B;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 28px;
+}
+
+.white-text {
+  color: #FFF;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.51px;
 }
 
 .image-max {
@@ -188,9 +196,190 @@ button {
 
 .header {
   width: 100%;
-  height: 68.125rem;
-  background: url("../images/header-bg.webp") no-repeat center;
+  height: 165rem;
+  background: #f3e1b8 url("../images/header-bg.webp") no-repeat top center;
   background-size: cover;
+  padding-top: 8.75rem;
+}
+.header-title {
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 0.821px 0.821px rgba(17, 5, 5, 0.3);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.header-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 653px;
+  animation: logo-anim 2.4s infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.63, 0.22, 1.01);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  transform: scale(1) rotate(0);
+  opacity: 1;
+  position: relative;
+}
+.header-logo img {
+  width: 100%;
+}
+.header-logo svg {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  opacity: 0;
+}
+.header-logo svg path {
+  fill: rgba(255, 255, 255, 0.8);
+}
+.header-logo svg.start-anim {
+  opacity: 1;
+  animation: anim-sale 1.1s infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.63, 0.22, 1.01);
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  transform: rotate(0deg);
+  transform-origin: left top;
+  transition: 0.3s;
+}
+@keyframes anim-sale {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes logo-anim {
+  0% {
+    transform: scale(0) rotate(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.2) rotate(-3deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+.header-subtitle {
+  color: #FFF;
+  text-shadow: 0 0.821px 0.821px rgba(17, 5, 5, 0.3);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.header-description {
+  width: 100%;
+  max-width: 441px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 28px;
+  letter-spacing: 0.51px;
+}
+.header-buttons {
+  width: 100%;
+  max-width: 266px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 1.875rem auto 0;
+}
+.header-buttons button {
+  width: 50%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.cars {
+  width: 100%;
+  padding-top: 15rem;
+}
+.cars .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cars-left-img {
+  width: 148px;
+  height: auto;
+  position: relative;
+  left: -80px;
+}
+.cars-left-title {
+  color: #0F121B;
+  text-shadow: 0 0.821px 0.821px rgba(17, 5, 5, 0.3);
+  font-size: 1.4375rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+.cars-left-title b {
+  color: #fff;
+}
+.cars-left-description {
+  font-weight: 400;
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 1.3125rem;
+}
+.cars-right {
+  transform: translateX(100px) translateY(30px);
+}
+.cars-right-img {
+  width: 100%;
+  max-width: 537px;
+  height: auto;
+  transform: translate(-290px, 50px);
+}
+
+.dubai-body {
+  width: 100%;
+  max-width: 370px;
+  transform: translate(-100px, -70px);
+}
+.dubai-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 12px;
+}
+.dubai h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.dubai .black-text {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
