@@ -482,7 +482,51 @@ button {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateY(25%) translateX(-50%);
+  transform: translateY(34%) translateX(-45%);
+}
+
+.extreme {
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+.extreme .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1175px;
+}
+.extreme-img {
+  min-width: 770px;
+  height: 490px;
+  padding: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 206px #F4E1B8;
+}
+.extreme-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.extreme-info-text {
+  color: #0F121B;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.extreme-info button {
+  margin-top: 30px;
+}
+.extreme-title {
+  font-size: 23px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
