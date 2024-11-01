@@ -604,3 +604,59 @@ button {
 
 
 }
+
+
+.bashing{
+  width: 100%;
+  height: 2778px;
+  background: url("../images/bashing-bg.webp") no-repeat center -300px;
+  background-size: cover;
+  position: relative;
+
+  .container{
+    position: absolute;
+    bottom: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex('s', 's');
+  }
+
+  &-body{
+    @include flex('c', 'c');
+    flex-direction: column;
+    width: 487px;
+  }
+
+  &-img{
+    width: 487px;
+    height: auto;
+  }
+
+  &-title{
+    color: #FFF;
+    font-size: 64px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &-subtitle{
+    color: #FFF;
+    font-size: 48px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &-text{
+    color: #0F121B;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 36px;
+    text-transform: lowercase;
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  &-btn{
+    width: 100%;
+    padding-left: 50px;
+    text-align: left;
+  }
+}
