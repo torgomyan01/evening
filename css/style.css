@@ -53,7 +53,7 @@ a {
   }
 }
 .hidden {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .rowdies-light {
@@ -324,8 +324,9 @@ button {
 
 .cars {
   width: 100%;
-  height: 1130px;
+  height: 1240px;
   position: relative;
+  padding-top: 120px;
 }
 .cars:before {
   content: "";
@@ -337,6 +338,16 @@ button {
   background: linear-gradient(0, #F4E1B8, #F4E1B8, rgba(244, 225, 184, 0.8901960784), transparent);
   z-index: 1;
   clip-path: polygon(0% 0%, 100% 0%, 100% 1550px, 85% 1850px, -19% 1510px, 0% 81%);
+}
+.cars:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #fff);
+  left: 0;
+  bottom: 260px;
+  z-index: 1;
 }
 .cars-bg {
   position: absolute;
@@ -431,7 +442,7 @@ button {
 }
 .gallery-body {
   position: relative;
-  right: -50px;
+  right: -30px;
 }
 .gallery-body-par {
   display: flex;
@@ -467,9 +478,11 @@ button {
 .dubai-land {
   width: 100%;
   height: auto;
-  margin-top: -1500px;
-  z-index: 1;
-  position: relative;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(25%) translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
