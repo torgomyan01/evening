@@ -52,6 +52,10 @@ a {
     font-size: 16px;
   }
 }
+.hidden {
+  overflow-x: hidden;
+}
+
 .rowdies-light {
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
@@ -320,7 +324,7 @@ button {
 
 .cars {
   width: 100%;
-  height: 1650px;
+  height: 1130px;
   position: relative;
 }
 .cars:before {
@@ -332,12 +336,14 @@ button {
   height: 100%;
   background: linear-gradient(0, #F4E1B8, #F4E1B8, rgba(244, 225, 184, 0.8901960784), transparent);
   z-index: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 1550px, 85% 1850px, -19% 1510px, 0% 81%);
 }
 .cars-bg {
   position: absolute;
   left: 0;
   top: -600px;
   width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 1200px, 0 1200px);
 }
 @media (max-width: 1418px) {
   .cars-bg {
@@ -412,7 +418,7 @@ button {
   height: auto;
   position: relative;
   z-index: 1;
-  top: -540px;
+  top: -550px;
   display: flex;
   justify-content: end;
   align-items: start;
@@ -451,11 +457,19 @@ button {
   right: 40px;
   color: #fff;
 }
-.gallery-body-item img {
+.gallery-body-item-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  background-color: red;
+  background-size: cover;
+  background-position: center;
+}
+
+.dubai-land {
+  width: 100%;
+  height: auto;
+  margin-top: -1500px;
+  z-index: 1;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
