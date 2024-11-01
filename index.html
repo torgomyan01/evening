@@ -15,7 +15,10 @@
   <link rel="apple-touch-icon" href="android-chrome-192x192.png">
   <meta name="msapplication-config" content="browserconfig.xml"/>
 
+  <script src="js/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="icons/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Evening</title>
@@ -199,7 +202,7 @@
     </div>
 
 
-    <img src="images/dubai-land.webp" alt="dubai-land" class="dubai-land" width="1920" height="1754">
+    <img src="images/dubai-land.webp" alt="dubai-land" class="dubai-land" width="3998" height="3000">
   </section>
   
   
@@ -207,7 +210,18 @@
   <section class="extreme">
     <div class="container">
       <div class="extreme-img">
-        <img src="images/extreme-img.webp" alt="extreme" width="1420" height="860">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/extreme-img.webp" alt="extreme" width="1420" height="860">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/extreme-img.webp" alt="extreme" width="1420" height="860">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/extreme-img.webp" alt="extreme" width="1420" height="860">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div class="extreme-info">
         <h3 class="extreme-title rowdies-bold">Extreme Entertainment</h3>

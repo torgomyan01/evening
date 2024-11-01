@@ -549,6 +549,31 @@ button {
     background: #fff;
     @include flex('c', 'c');
     box-shadow: 0 0 206px #F4E1B8;
+    overflow-x: hidden;
+    position: relative;
+
+    .swiper-pagination {
+      bottom: 40px;
+
+      span {
+        margin-right: 10px;
+        font-size: 0;
+        width: 30px;
+        height: 5px;
+        opacity: 0.2;
+        background: #fff;
+        border-radius: 0;
+        transition: 0.3s;
+
+        &[aria-current="true"] {
+          opacity: 1;
+        }
+      }
+    }
+
+    .swiper-wrapper{
+      padding-left: 0;
+    }
 
     img {
       width: 100%;
